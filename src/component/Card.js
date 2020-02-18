@@ -16,8 +16,8 @@ export default function Card() {
     }, [])
     return (
         <div>
-            {data.map(name => (
-                <div> name={name} </div>
+            {data.map((name, index) => (
+                <div> key={index} name={name} </div>
             ))}
         </div>
     )
